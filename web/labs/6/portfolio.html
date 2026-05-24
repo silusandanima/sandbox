@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #0f172a;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 28px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #cbd5e1;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e3a8a;
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+
+    .about-content,
+    .education-content,
+    .projects,
+    .skills-container,
+    .achievement-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #334155;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e3a8a;
+      padding: 8px 15px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    button {
+      background: #0f172a;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #1e293b;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container nav-container">
+
+      <h1 class="logo">Portfolio</h1>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <header id="home">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Profile Photo">
+
+    <h1>Siluni Liyanage</h1>
+
+    <p>
+      I am an undergraduate student passionate about technology,
+      Artificial Intelligence, and software development. I enjoy
+      learning programming and building creative digital solutions.
+      My goal is to become an AI Engineer in the future.
+    </p>
+
+  </header>
+
+  <section id="about">
+
+    <div class="container">
+
+      <h2>About Me</h2>
+
+      <div class="about-content">
+
+        <div class="card">
+
+          <h3>Personal Profile</h3>
+
+          <p>
+            I am a motivated undergraduate student with strong interest
+            in Artificial Intelligence, software engineering, and web
+            development. I enjoy learning new technologies and solving
+            real-world problems using programming.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>Interests & Strengths</h3>
+
+          <ul>
+            <li>Artificial Intelligence</li>
+            <li>Web Development</li>
+            <li>Python Programming</li>
+            <li>Creative Problem Solving</li>
+            <li>Communication & Teamwork</li>
+          </ul>
+
+          <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>GitHub</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="education">
+
+    <div class="container">
+
+      <h2>Education</h2>
+
+      <div class="education-content">
+
+        <div class="card">
+
+          <h3>NSBM Green University</h3>
+
+          <p>
+            BSc in Artificial Intelligence - Plymouth University (UK)
+            (Currently Pursuing)
+          </p>
+
+          <br>
+
+          <h4>Relevant Coursework</h4>
+
+          <ul>
+            <li>Programming Fundamentals</li>
+            <li>Web Development</li>
+            <li>Database Systems</li>
+            <li>Computer Networks</li>
+            <li>Data Structures & Algorithms</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="skills">
+
+    <div class="container">
+
+      <h2>Skills</h2>
+
+      <div class="skills-container">
+
+        <div class="card">
+
+          <h3>Programming Languages</h3>
+
+          <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+          </ul>
+
+        </div>
+
+        <div class="card">
+
+          <h3>Web Development</h3>
+
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+
+        </div>
+
+        <div class="card">
+
+          <h3>Tools & Technologies</h3>
+
+          <ul>
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>MySQL</li>
+          </ul>
+
+        </div>
+
+        <div class="card">
+
+          <h3>Soft Skills</h3>
+
+          <ul>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Problem Solving</li>
+            <li>Critical Thinking</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="projects">
+
+    <div class="container">
+
+      <h2>Projects</h2>
+
+      <div class="projects">
+
+        <div class="card">
+
+          <h3>AI Assistant</h3>
+
+          <p><strong>Description:</strong>
+            A virtual assistant project designed to help with reminders,
+            tasks, and real-time conversations.
+          </p>
+
+          <p><strong>Technologies:</strong>
+            Python, AI Concepts
+          </p>
+
+          <p><strong>Role:</strong>
+            Designed and developed the assistant system.
+          </p>
+
+          <p><strong>Outcome:</strong>
+            Improved understanding of AI assistant development.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>LMS Reminder System</h3>
+
+          <p><strong>Description:</strong>
+            A smart system that automatically checks LMS updates and
+            assignment deadlines.
+          </p>
+
+          <p><strong>Technologies:</strong>
+            Python, Automation
+          </p>
+
+          <p><strong>Role:</strong>
+            Developed automation and reminder features.
+          </p>
+
+          <p><strong>Outcome:</strong>
+            Helps students manage academic work efficiently.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>Portfolio Website</h3>
+
+          <p><strong>Description:</strong>
+            A responsive personal portfolio website.
+          </p>
+
+          <p><strong>Technologies:</strong>
+            HTML, CSS
+          </p>
+
+          <p><strong>Role:</strong>
+            Designed and developed the complete website.
+          </p>
+
+          <p><strong>Outcome:</strong>
+            Successfully showcases academic and technical skills.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="achievements">
+
+    <div class="container">
+
+      <h2>Achievements & Certifications</h2>
+
+      <div class="achievement-container">
+
+        <div class="card">
+
+          <h3>Online Courses</h3>
+
+          <p>
+            Completed online courses related to Artificial Intelligence,
+            Python programming, and Web Development.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>Hackathons & Competitions</h3>
+
+          <p>
+            Participated in university coding competitions and
+            technology events to improve teamwork and technical skills.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>Recognition</h3>
+
+          <p>
+            Recognized for creativity, dedication, and continuous
+            learning in academic and technical activities.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="container">
+
+      <h2>Contact Me</h2>
+
+      <div class="card">
+
+        <form>
+
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name" required>
+
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required>
+
+          <label>Phone Number</label>
+          <input type="tel" placeholder="Enter your phone number" required>
+
+          <label>Gender</label><br><br>
+
+          <input type="radio" name="gender"> Male
+          <input type="radio" name="gender"> Female
+
+          <br><br>
+
+          <label>Services Required</label><br><br>
+
+          <input type="checkbox"> Web Development<br>
+          <input type="checkbox"> UI Design<br>
+          <input type="checkbox"> Maintenance
+
+          <br><br>
+
+          <label>Description</label>
+
+          <textarea rows="5" placeholder="Write your message"></textarea>
+
+          <button type="submit">Send Message</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>© 2026 Siluni Liyanage | All Rights Reserved</p>
+
+  </footer>
+
+</body>
+</html>

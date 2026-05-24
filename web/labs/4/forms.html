@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <!-- Left Side: Form -->
+        <section class="form-section">
+            <form>
+                <fieldset>
+                    <legend>Event Details</legend>
+                    
+                    <div class="input-group">
+                        <label for="event-name">Event Name:</label>
+                        <input type="text" id="event-name" name="event-name">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="organizer">Organizer:</label>
+                        <input type="text" id="organizer" name="organizer">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Event Type:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="public" name="type" value="public">
+                            <label for="public">Public</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="private" name="type" value="private">
+                            <label for="private">Private</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category">
+                            <option value="conference">Conference</option>
+                            <option value="music">Music</option>
+                            <option value="poetry">Poetry</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="date">Event Date and Time:</label>
+                        <input type="datetime-local" id="date" name="date">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Facilities Required:</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="projector" name="facility">
+                            <label for="projector">Projector</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="sound" name="facility">
+                            <label for="sound">Sound System</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="catering" name="facility">
+                            <label for="catering">Catering</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pin">PIN for Admin Access:</label>
+                        <input type="password" id="pin" name="pin">
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Right Side: Poster -->
+        <section class="poster-section">
+            <img src="images (1).jpg" alt="Open Mic Night Poster">
+        </section>
+    </main> 
+</body>
+</html>

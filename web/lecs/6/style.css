@@ -1,0 +1,153 @@
+body{
+    background: linear-gradient(to right, #000000 0%, #002f35 50%, #004852 100%);
+    margin  : 0;
+    color: white;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    animation: fadeInBody 1.5s ease-in-out;
+}
+header{
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    animation: slideDown 1s ease-out;
+}
+header h1{
+    color:rgb(59, 211, 165);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+@keyframes fadeInBody{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+nav{
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+nav a{
+    background-color: rgb(2, 126, 99);
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, #3a585e, #92fe9d);
+}
+nav a:hover{
+    background:linear-gradient(to left, #eeff00, #fec692);
+    color: black;
+}
+section{
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(2, 71, 66, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: 0.5s;
+}
+section h1{
+    color: rgb(59, 211, 165);
+    text-align: center;
+}
+section:hover{
+    transform: translateY(-5px);
+}
+.img{
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.img img {
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 20px;
+    border: 3px solid rgb(59, 211, 165);
+    transition: 0.4s ease;
+}
+
+.img img:hover {
+    transform: scale(1.03) rotate(6deg);
+    box-shadow: 0 0 20px rgb(59, 211, 165);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+}
+
+th{
+    background: darkgreen;
+    color: white;
+    padding: 15px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+td:hover{
+    background: linear-gradient(to left, aquamarine, lightgreen);
+    color: black;
+    transform: scale(1.05);
+
+}
+
+.Section5{
+    width: 85%;
+    margin: 30px auto;
+    background: rgba(255,255,255,0.12);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px black;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.Section5:hover{
+    transform: translateY(-5px);
+}
+
+.Section5 h3{
+    color: aquamarine;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+audio{
+    width: 300px;
+}
+footer{
+    background:black;
+    text-align:center;
+    padding:30px;
+    color:#00ffe5;
+    font-size:22px;
+    font-weight:bold;
+}
